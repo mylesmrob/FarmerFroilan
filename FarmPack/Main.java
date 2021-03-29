@@ -46,10 +46,15 @@ public class Main {
         }
         Field.field(cropRows);
 
-        //ChickenCoops
-        for(int i = 0; i < 15; i++){
-            
+        ArrayList<Chicken> chickens = new ArrayList<>();
+        ChickenCoop coopA = new ChickenCoop();
+        ChickenCoop coopB = new ChickenCoop();
+        ChickenCoop coopC = new ChickenCoop();
+        for(int i = 0; i < 4; i++){
+            Chicken chicken = new Chicken();
+            chicken.setName("Chicken " + i);
+            chickens.add(chicken);
         }
-
+        coopA.setChickens(chickens);
     }
 }
