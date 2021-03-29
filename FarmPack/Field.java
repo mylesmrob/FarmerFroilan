@@ -3,10 +3,13 @@ package FarmPack;
 import java.util.ArrayList;
 
 public class Field extends Farm {
+    private ArrayList<CropRow> cropRows;
 
-    public static void field(ArrayList<CropRow> cropRow){
-        for(CropRow c : cropRow){
-            System.out.print(c.toString() + "\n");
-        }
+    public void field(ArrayList<CropRow> cropRows){
+        this.cropRows = cropRows;
+    }
+
+    public ArrayList<CropRow> getField() {
+        return cropRows;
     }
 }
