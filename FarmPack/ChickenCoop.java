@@ -1,20 +1,16 @@
 package FarmPack;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ChickenCoop extends Farm {
 
-    public ArrayList<Chicken> getChickens() {
+    public List<Chicken> getChickens() {
         return chickens;
     }
 
-    public void setChickens(ArrayList<Chicken> chickens) {
+    public void store(List<Chicken> chickens) {
         this.chickens = chickens;
     }
 
-    private ArrayList<Chicken> chickens;
-
-    public void store(ArrayList chicken){
-
-    }
+    private List<Chicken> chickens;
 }

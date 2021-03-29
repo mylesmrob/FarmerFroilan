@@ -9,8 +9,6 @@ public class CropRow extends Farm{
 
     @Override
     public String toString() {
-        return "CropRow{" +
-                "crop='" + crop + '\'' +
-                '}';
+        return crop;
     }
 }
